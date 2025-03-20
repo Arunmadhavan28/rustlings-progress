@@ -11,11 +11,19 @@
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
-
-fn main() {
-    // You can optionally experiment here.
+fn calculate_price_of_apples(quantity:i32) -> i32 {
+    if quantity > 40 {
+        quantity
+    }else{
+        quantity *2 
+    }
 }
+fn main(){
+    let quantity:i32 = 22;
+    println!("the total is {}", calculate_price_of_apples(quantity))
 
+
+}
 // Don't change the tests!
 #[cfg(test)]
 mod tests {
